@@ -71,7 +71,7 @@ export default function Home() {
           <label style={{marginBottom:10, fontSize:20}}>Content:
             <textarea type="text" placeholder='Spill it!' onChange={(e) => setContent(e.target.value)} />
           </label>
-          <button style={{fontFamily:'Delicious Handrawn', height:'30px', width:'60px', fontSize:'16px', backgroundColor:'#adc178', borderRadius:'30px'}}type="submit">Submit</button>
+          <button style={{fontFamily:'Montserrat', height:'30px', width:'60px', fontSize:'12px', backgroundColor:'#adc178', borderRadius:'30px'}}type="submit">Submit</button>
         </form>
 
         <hr/>
@@ -108,7 +108,7 @@ function PostComp({ post, handleComment }) {
         Comment:
         <textarea className={styles.commentInput} value={comment} onChange={(e) => setComment(e.target.value)}/>
       </label>
-      <button style={{fontFamily:'Delicious Handrawn', height:'30px', width:'60px', fontSize:'16px', backgroundColor:'#adc178', borderRadius:'30px'}}className={styles.commentButton} type="submit">Submit</button>
+      <button style={{fontFamily:'Montserrat', height:'30px', width:'60px', fontSize:'12px', backgroundColor:'#adc178', borderRadius:'30px'}}className={styles.commentButton} type="submit">Submit</button>
       </form>
       <ul className={styles.commentList}>
         {comments.map((comment) => (
